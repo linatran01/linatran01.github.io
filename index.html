@@ -1,0 +1,195 @@
+<html>
+<head>
+  <title>Akademische Webseite | Lina Tran</title>
+  <meta charset="UTF-8"><!--[if IE]><![endif]-->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Lina Tran | Business Administrator </title>
+  <link rel="icon" type="image/png" href="/img/logo-white.png" hreflang="en-us">
+
+  <meta property="og:title" content="Akademische Webseite | Lina Tran" />
+  <meta property="og:description" content="I learn, I develop, I breathe in machine learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://linatran01.github.io/Akademische Webseite/" />
+  <meta property="og:site_name" content="Akademische Webseite | Lina Tran" />
+  <meta property="og:image" content="http://linatran01.github.io/Akademische Webseite/img/og.jpg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="672" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:locale" content="en_US">
+
+  <meta name="description" content="Ich lerne, entwickle mich, atme in der Betriebswirtschaft.">
+  <meta name="keywords" content="Student, Betriebswirtschaft, Lina Tran, Akademische Webseite, Europa-Universität Viadrina">
+  
+
+  <meta itemprop="name" content="Akademische Webseite | Lina Tran">
+  <meta itemprop="description" content="Ich lerne, entwickle mich, atme in der Betriebswirtschaft.">
+  <meta itemprop="image" content="http://linatran01.github.io/img/og.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://fb.me/react-0.14.6.js"></script>
+  <script src="https://fb.me/react-dom-0.14.6.js"></script>
+  <script src="https://unpkg.com/react@0.12.1/dist/JSXTransformer.js"></script>
+  <script type="text/jsx">
+
+    var DATA = {
+      name: "Hey, I'm Lina",
+      subtext: "Student & Business Administrator",
+      jobStatus: "Bachelor-Student @ Europa-Universität Viadrina ",
+      linkedinURL: 'https://www.linkedin.com/in/lina-tran-404978193/',
+      resumeURL: 'https://drive.google.com/file/d/1zpsWC1cQV0KfRfiNW9kYuXLPpUBu_oNj/view?usp=sharing'
+    }
+
+    var App = React.createClass({
+      render: function() {
+        return(
+          <div className="app">
+            <Left
+              name={this.props.profileData.name}
+              subtext={this.props.profileData.subtext}
+              jobStatus={this.props.profileData.jobStatus}
+              linkedinURL={this.props.profileData.linkedinURL}
+            />
+            <Right
+              intro={this.props.profileData.intro}
+              resumeURL={this.props.profileData.resumeURL}
+            />
+          </div>
+        );
+      }
+    });
+
+    var Left = React.createClass({
+      render: function() {
+        return(
+          <div className="left">
+            <div className="bg-img"></div>
+            <div className="left-inner">
+              <div className="info">
+                <h2 className="name">{this.props.name}</h2>
+                <div className="subtext">{this.props.subtext}</div>
+                <div className="jobStatus">{this.props.jobStatus}</div>
+                <div className="social-links">
+                  <a href={this.props.linkedinURL}  target="_blank"><i className="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    var Right = React.createClass({
+      render: function() {
+        return(
+          <div className="right">
+            <div className="right-inner">
+              <div className="introduction">
+                <h4>Intro</h4>
+                <div className="content">
+                  <p className="intro-p">I&#39;m currently in my second year studying Internationale Betriebswirtschaftslehre at Europa-Universität Viadrina.</p>
+                  <p className="intro-p">Ich bin ein hochorganisierter, fokussierter und ergebnisorientierter Student mit Fokus auf Marketing und Vertrieb. Ich kann meine Erfahrung, mein Know-how und meine Fähigkeiten teilen, um zum anhaltenden Erfolg Ihres weithin respektierten Unternehmens beizutragen.</p>
+                  <span className="intro-p job-pls"></span>
+                </div>
+              </div>
+              <div className="skills">
+                <h4>Kenntnisse und Fähigkeiten</h4>
+                <div className="content">
+                  <div className="skill-category">
+                    <strong>EVD-Kenntnisse: &nbsp;</strong>
+                    <span>Microsoft Word (Experte),
+Microsoft Excel (Fortgeschritten),
+Microsoft OneNote (Experte),
+Microsoft PowerPoint (Experte),
+macOS Keynote (Fortgeschritten),
+macOS Pages (Fortgeschritten)</span>
+                  </div>
+                  <div className="skill-category">
+                    <strong>Sprachen &amp; Frameworks: &nbsp;</strong>
+                    <span>Deutsch (Muttersprache),
+Englisch (Fortgeschritten),
+Vietnamesisch (Fließend)</span>
+                  </div>
+                </div>
+              </div>
+              <div className="education">
+                <h4>Ausbildung</h4>
+                <div className="content">
+                  <div className="university"><a href="https://www.europa-uni.de/en/index.html" target="_blank">Europa-Universität Viadrina</a></div>
+                  
+                  <div className="major"><strong>Haupt:</strong> Internationale Betriebswirtschaftslehre</div>
+                  <div className="grad-date">Oktober 2019 - jetzt</div>
+
+                  <div className="university"><a href="https://www.barnim-gymnasium.net/" target="_blank">Barnim Gymnasium</a></div>
+                  
+                  <div className="major"><strong>Haupt:</strong> Allgemeine Hochschulreife </div>
+                  <div className="grad-date">August 2013 - Juni 2019</div>
+                </div>			
+              </div>
+                            <div className="experience">
+                <h4>Berufliche Laufbahn</h4>
+                <div className="content">
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.ellenandelysar.com/" target="_blank">Ellen & Elysar - Corporate Attire</a>
+                      <div className="duration">September 2019 &mdash; Dezember 2019</div>
+                    </div>
+                    <div className="title">Social Media Marketing</div>
+                    <ul className="description">
+                      <li>WAnalyse von Verkaufsstrategien</li>
+                      <li>Bearbeitung von Social Media-Inhalten und Grafikdesign</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="projects">
+                <h4>Engagement</h4>
+                <div className="content">
+                  <div className="project-item">
+                    <a className="project-title" href="" target="_blank">Vietnamese Association Viadrina (VAV)</a>
+                    <p className="project-desc">Vizepräsident</p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="https://www.unicef.org/" target="_blank">UNICEF Initiative Frankfurt (Oder)</a>
+                    <p className="project-desc">Freiwilliges Mitglied</p>
+                  </div>
+
+                </div>
+              </div>
+              <div className="projects">
+                <h4>Kontakt</h4>
+                <div className="content">
+                  <div className="project-item">
+                    <a className="project-title" href="" target="_blank">Tel</a>
+                    <p className="project-desc">0152 51700497</p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="https://www.unicef.org/" target="_blank">E-Mail</a>
+                    <p className="project-desc">linatran01@hotmail.de</p>
+                  </div>
+
+                </div>
+              </div>
+              <a className="resume" href={this.props.resumeURL} target="_blank"><div className="resume-link">Schnappen Sie sich eine PDF-Version meiner vollständigen Akademischen Website</div></a>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <App profileData={DATA}/>,
+      document.getElementById('content')
+    );
+
+
+  </script>
+</body>
+</html>
